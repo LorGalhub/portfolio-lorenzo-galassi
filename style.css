@@ -319,25 +319,17 @@ h1 {
   }
 }
 
-.vertical-video-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 180px) !important;
-  gap: 16px !important;
-  justify-content: center !important;
-  width: 100% !important;
+#video-verticali {
+  grid-template-columns: repeat(4, 160px);
+  justify-content: center;
 }
 
-.vertical-video-grid .video-thumb {
-  width: 180px !important;
-  height: 320px !important;
-  max-width: 180px !important;
-  overflow: hidden !important;
-  position: relative !important;
+#video-verticali .video-thumb {
+  width: 160px;
+  height: 285px;
 }
 
-.vertical-video-grid .video-thumb iframe {
-  width: 180px !important;
-  height: 320px !important;
-  max-width: 180px !important;
-  display: block !important;
+#video-verticali iframe {
+  width: 160px !important;
+  height: 285px !important;
 }
