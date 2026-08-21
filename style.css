@@ -320,21 +320,24 @@ h1 {
 }
 
 .vertical-video-grid {
-  grid-template-columns: repeat(4, minmax(0, 180px));
-  gap: 16px;
-  justify-content: center;
+  display: grid !important;
+  grid-template-columns: repeat(4, 180px) !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  width: 100% !important;
 }
 
 .vertical-video-grid .video-thumb {
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  overflow: hidden;
-  position: relative;
+  width: 180px !important;
+  height: 320px !important;
+  max-width: 180px !important;
+  overflow: hidden !important;
+  position: relative !important;
 }
 
 .vertical-video-grid .video-thumb iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
+  width: 180px !important;
+  height: 320px !important;
+  max-width: 180px !important;
+  display: block !important;
 }
