@@ -6,6 +6,36 @@
   <title>Lorenzo Galassi — Learning &amp; Digital Content Specialist</title>
   <meta name="description" content="Portfolio di Lorenzo Galassi, Learning & Digital Content Specialist: content strategy, produzione multimediale, live events e project coordination.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .video-embed-wrap{
+      max-width:640px;
+      margin:1.25rem auto;
+    }
+    .video-embed{
+      position:relative;
+      width:100%;
+      aspect-ratio:16/9;
+      border-radius:8px;
+      overflow:hidden;
+      background:#000;
+    }
+    .video-embed iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+    .video-grid-embed{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:1rem;
+      margin:1.25rem 0;
+    }
+    .video-grid-embed .video-embed{
+      border-radius:8px;
+    }
+  </style>
 </head>
 <body>
 
@@ -90,11 +120,10 @@
             <img src="assets/Cydopg2/471584184_10162586136366397_5101664292335146733_n.jpg" loading="lazy">
             <img src="assets/Cydopg2/35123826_10214189490144257_964029835066212352_n.jpg" loading="lazy">
           </div>
-        </article>
-          <div class="project-media">
-            <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLHJG6DL69O4g3XmF89krsmRW3D34qld3P" target="_blank" rel="noopener">
-              Guarda la playlist su YouTube ↗
-            </a>
+          <div class="project-media video-embed-wrap">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/videoseries?list=PLHJG6DL69O4g3XmF89krsmRW3D34qld3P" title="Playlist Cydonia su YouTube" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
         </article>
 
@@ -117,24 +146,19 @@
             <img src="assets/2022/VGC Pokèmon World Championship 2022 Dopo tre lunghissimi anni dallultimo mondiale, sono finalm (3).webp" loading="lazy">
             <img src="assets/2022/VGC Pokèmon World Championship 2022 Dopo tre lunghissimi anni dallultimo mondiale, sono finalmbro.webp" loading="lazy">
           </div>
-        </article>
-          <div class="project-media video-grid">
-            <a class="video-thumb" href="https://www.youtube.com/watch?v=WdB9GJoY3Ks" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/WdB9GJoY3Ks/hqdefault.jpg" alt="Re-upload della diretta dei Pokémon World Championships 2022 — video 1 (si apre su YouTube)" loading="lazy">
-              <span class="play-badge" aria-hidden="true">▶</span>
-            </a>
-            <a class="video-thumb" href="https://www.youtube.com/watch?v=ibn_cup3JuI" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/ibn_cup3JuI/hqdefault.jpg" alt="Re-upload della diretta dei Pokémon World Championships 2022 — video 2 (si apre su YouTube)" loading="lazy">
-              <span class="play-badge" aria-hidden="true">▶</span>
-            </a>
-            <a class="video-thumb" href="https://www.youtube.com/watch?v=sOS4q75VI-s" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/sOS4q75VI-s/hqdefault.jpg" alt="Re-upload della diretta dei Pokémon World Championships 2022 — video 3 (si apre su YouTube)" loading="lazy">
-              <span class="play-badge" aria-hidden="true">▶</span>
-            </a>
-            <a class="video-thumb" href="https://www.youtube.com/watch?v=E68_cd4kwX4" target="_blank" rel="noopener">
-              <img src="https://img.youtube.com/vi/E68_cd4kwX4/hqdefault.jpg" alt="Re-upload della diretta dei Pokémon World Championships 2022 — video 4 (si apre su YouTube)" loading="lazy">
-              <span class="play-badge" aria-hidden="true">▶</span>
-            </a>
+          <div class="project-media video-grid-embed">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/WdB9GJoY3Ks" title="Re-upload della diretta dei Pokémon World Championships 2022 — video 1" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/ibn_cup3JuI" title="Re-upload della diretta dei Pokémon World Championships 2022 — video 2" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/sOS4q75VI-s" title="Re-upload della diretta dei Pokémon World Championships 2022 — video 3" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/E68_cd4kwX4" title="Re-upload della diretta dei Pokémon World Championships 2022 — video 4" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
         </article>
 
@@ -180,17 +204,13 @@ reclutamento, formazione e coordinamento dello staff e supporto al pubblico.
     <img src="assets/Bello Figo/Screenshot_20191112-182833.jpg" loading="lazy"> 
 
        </div>
+
+  <div class="project-media video-embed-wrap">
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/3KN8MwIAcH0" title="Bello Figo — Trombo a Facoltà" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
           </article>
-
-  
-
-   <div class="project-media">
-            <!-- TODO: sostituire TODO_LINK_FIGO con il link definitivo -->
-            <a class="playlist-link" href="https://www.youtube.com/watch?v=3KN8MwIAcH0" target="_blank" rel="noopener">
-              Guarda il video su YouTube ↗
-            </a>
-          </div>
-        </article>
       
         <!-- 3.5 Canale Francesco Pardini -->
         <article class="project">
@@ -207,12 +227,10 @@ reclutamento, formazione e coordinamento dello staff e supporto al pubblico.
             <img src="assets/FIJ/tauros (1).jpg" loading="lazy">
             <img src="assets/FIJ/chansey (1).jpg" loading="lazy">
           </div>
-          </article>
-          <div class="project-media">
-            <!-- TODO: sostituire TODO_LINK_PARDINI con il link definitivo -->
-            <a class="playlist-link" href="https://www.youtube.com/playlist?list=PLO33J0WiHfBv68DjSqpUSjdxLwpLT3yWI" target="_blank" rel="noopener">
-              Guarda la playlist su YouTube ↗
-            </a>
+          <div class="project-media video-embed-wrap">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/videoseries?list=PLO33J0WiHfBv68DjSqpUSjdxLwpLT3yWI" title="Playlist canale Francesco Pardini" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
         </article>
 
@@ -231,12 +249,10 @@ reclutamento, formazione e coordinamento dello staff e supporto al pubblico.
              <img src="assets/Canale/carte (1).jpg" loading="lazy">
              <img src="assets/federif (1).png" loading="lazy">
           </div>
-          </article>
-          <div class="project-media">
-            <!-- TODO: sostituire TODO_LINK_CANALE_PERSONALE con il link definitivo -->
-            <a class="playlist-link" href="https://www.youtube.com/@Galakazam" target="_blank" rel="noopener">
-              Vai al canale YouTube ↗
-            </a>
+          <div class="project-media video-embed-wrap">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/videoseries?list=UUiQuBV4zMUC_fMydD8wktsg" title="Video del canale Galakazam" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
         </article>
 
@@ -253,12 +269,10 @@ reclutamento, formazione e coordinamento dello staff e supporto al pubblico.
             <img src="assets/PP/sam (1).jpg" loading="lazy">
             <img src="assets/PP/naiky (1).jpg" loading="lazy">
           </div>
-          </article>
-          <div class="project-media">
-            <!-- TODO: sostituire TODO_LINK_CANALE_PERSONALE con il link definitivo -->
-            <a class="playlist-link" href="https://www.youtube.com/@PurplePasta" target="_blank" rel="noopener">
-              Vai al canale YouTube ↗
-            </a>
+          <div class="project-media video-embed-wrap">
+            <div class="video-embed">
+              <iframe src="https://www.youtube.com/embed/videoseries?list=UUTdNCfl8HaAY0McJvNp9TsQ" title="Video del canale Purple Pasta" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
         </article>
 
