@@ -406,3 +406,15 @@ h1 {
   width: 160px !important;
   height: 285px !important;
 }
+
+/* Spaziatura uniforme tra video e fotografie */
+
+.recent-photo-grid {
+  margin-top: 1rem;
+}
+
+/* Spaziatura uniforme nella sezione Pokémon World Championships */
+
+.project-media.gallery + .project-media.video-grid {
+  margin-top: 1rem;
+}
