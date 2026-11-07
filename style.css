@@ -134,6 +134,72 @@ h1 {
   padding: 3rem 0;
 }
 
+/* Ultimi lavori: stessa larghezza e stile del portfolio */
+.recent-work {
+  padding-bottom: 0;
+}
+
+.recent-work-subtitle {
+  color: var(--text-muted);
+  margin: 0.35rem 0 1.5rem;
+}
+
+.recent-video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.recent-video-frame {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.recent-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.recent-media-caption {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.55rem;
+}
+
+.recent-photo-title {
+  font-size: 1.25rem;
+  margin: 1.75rem 0 1rem;
+}
+
+.recent-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.recent-photo-grid a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.recent-photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  transition: opacity 0.15s ease;
+}
+
+.recent-photo-grid a:hover img {
+  opacity: 0.85;
+}
+
 .project {
   padding: 2rem 0;
   border-top: 1px solid var(--border);
@@ -290,6 +356,13 @@ h1 {
 /* Layout da tablet in su */
 
 @media (min-width: 640px) {
+  .recent-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .recent-photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .hero-inner {
     flex-direction: row;
     align-items: center;
